@@ -1,0 +1,157 @@
+/* ===========================
+   BASE RESET
+   Ensures consistent rendering across browsers
+   and provides a predictable box model
+=========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   TEXT SIZE ADJUST CONTROL — Controllo dell'adattamento del testo
+   ============================================================ */
+
+/* 
+   IT: Impedisce ai browser mobili di ingrandire automaticamente il testo,
+   mantenendo coerenza tipografica e layout stabile.
+
+   EN: Prevents mobile browsers from automatically enlarging text,
+   ensuring consistent typography and stable layout.
+*/
+html {
+  -moz-text-size-adjust: none;       
+  /* IT: Disattiva l'adattamento del testo su Firefox.
+     EN: Disables text auto-adjust on Firefox. */
+
+  -webkit-text-size-adjust: none;    
+  /* IT: Disattiva l'adattamento del testo su Chrome/Safari.
+     EN: Disables text auto-adjust on Chrome/Safari. */
+
+  text-size-adjust: none;            
+  /* IT: Standard moderno per bloccare l'adattamento su browser compatibili.
+     EN: Modern standard to block text adjustment on supported browsers. */
+
+  box-sizing: border-box;            
+  /* IT: Include padding e border nel calcolo di width/height, evitando overflow.
+     EN: Includes padding and border in width/height calculations, preventing overflow. */
+}
+
+/* Smooth scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* ============================================================
+   LISTE ACCESSIBILI
+   - Rimuove gli stili predefiniti SOLO quando l'HTML specifica
+     un ruolo semantico (role="list")
+   - Evita di alterare liste che devono mantenere i pallini
+============================================================ */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* ============================================================
+   GLOBAL RESET & BASELINE
+   These rules remove default browser styles to ensure consistent
+   rendering across all devices and browsers.
+============================================================ */
+
+/* Ensures the body always fills the viewport height */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Removes default margins and padding from html and body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Universal margin reset to avoid unexpected spacing */
+* {
+  margin: 0;
+}
+
+/* ============================================================
+   TYPOGRAPHY & TEXT BEHAVIOR
+============================================================ */
+
+/* Tighter line-height for headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Improves readability by balancing line breaks in headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Default styling for unclassed links */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* ============================================================
+   MEDIA ELEMENTS & FORM ELEMENTS
+============================================================ */
+
+/* Makes images responsive and block-level */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Ensures form elements inherit the global font */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Prevents tiny textareas when no rows attribute is set */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Adds scroll margin for anchored elements */
+:target {
+  scroll-margin-block: 5ex;
+}
