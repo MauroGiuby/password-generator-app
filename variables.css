@@ -1,0 +1,51 @@
+/* Root Styles */
+:root {
+  /* ============================================
+  BASE COLORS
+  ============================================ */
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* ============================================
+  NEUTRALS (Grey Scale)
+  From light → dark
+  ============================================ */
+  --neutral-200: #E6E5EA;  /* Grey 200 */
+  --neutral-600: #817D92;  /* Grey 600 */
+  --neutral-700: #54535B;  /* Grey 700 */
+  --neutral-800: #24232C;  /* Grey 800 */
+  --neutral-850: #18171F;  /* Grey 850 */
+  --neutral-900: #14131B;  /* Grey 900 */
+  --neutral-950: #08070B;  /* Grey 950 */
+
+  /* ============================================
+  SEMANTIC COLORS
+  ============================================ */
+  --green-200: #A4FFAF;    /* Success */
+  --yellow-300: #F8CD65;   /* Warning */
+  --orange-400: #FB7C58;   /* Alert */
+  --red-500: #F64A4A;      /* Error */
+
+  /* ============================================
+  GRADIENTS
+  ============================================ */
+  --gradient-1: linear-gradient(
+    180deg,
+    #14131B 0%,
+    #08070B 100%
+  );
+  
+
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-700: 56px;
+  --spacing-1000: 80px;
+  --spacing-1300: 104px;
+  --spacing-1600: 128px;
+  --spacing-2000: 160px;
+  --spacing-2200: 176px;
+  --spacing-2300: 184px;
+}
