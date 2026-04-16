@@ -35,10 +35,6 @@ html {
   text-size-adjust: none;            
   /* IT: Standard moderno per bloccare l'adattamento su browser compatibili.
      EN: Modern standard to block text adjustment on supported browsers. */
-
-  box-sizing: border-box;            
-  /* IT: Include padding e border nel calcolo di width/height, evitando overflow.
-     EN: Includes padding and border in width/height calculations, preventing overflow. */
 }
 
 /* Smooth scroll */
@@ -62,16 +58,6 @@ dd {
   margin-block-end: 0;
 }
 
-/* ============================================================
-   LISTE ACCESSIBILI
-   - Rimuove gli stili predefiniti SOLO quando l'HTML specifica
-     un ruolo semantico (role="list")
-   - Evita di alterare liste che devono mantenere i pallini
-============================================================ */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
 
 /* ============================================================
    GLOBAL RESET & BASELINE
@@ -91,11 +77,6 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-}
-
-/* Universal margin reset to avoid unexpected spacing */
-* {
-  margin: 0;
 }
 
 /* ============================================================

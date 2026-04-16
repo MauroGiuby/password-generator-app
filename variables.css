@@ -1,5 +1,41 @@
 /* Root Styles */
 :root {
+
+  /* ============================================
+  FONT FAMILY
+  ============================================ */
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* ============================================
+  TEXT PRESETS (Headings / Body)
+  Naming: text-preset-[size]
+  ============================================ */
+
+  /* Text Preset 1 */
+  --text-1-size: 2rem;        /* 32px */
+  --text-1-line: 1.3125;      /* 42px */
+  --text-1-weight: 700;
+  --text-1-spacing: 0;
+
+  /* Text Preset 2 */
+  --text-2-size: 1.5rem;      /* 24px */
+  --text-2-line: 1.333;       /* 32px */
+  --text-2-weight: 700;
+  --text-2-spacing: 0;
+
+  /* Text Preset 3 */
+  --text-3-size: 1.125rem;    /* 18px */
+  --text-3-line: 1.333;       /* 24px */
+  --text-3-weight: 700;
+  --text-3-spacing: 0;
+
+  /* Text Preset 4 */
+  --text-4-size: 1rem;        /* 16px */
+  --text-4-line: 1.25;        /* 20px */
+  --text-4-weight: 700;
+  --text-4-spacing: 0;
+
+
   /* ============================================
   BASE COLORS
   ============================================ */
